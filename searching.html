@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stagely MG - Accueil</title>
+    <title>Stagely MG - Recherche</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
@@ -37,7 +37,7 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-center flex-grow-1 gap-5">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#" style="position: relative;">
+                            <a class="nav-link" aria-current="page" href="#" style="position: relative;">
                                 Trouver un stage
                                 <span class="border-hover"></span>
                             </a>
@@ -72,25 +72,9 @@
         </div>
     </nav>
 
-        <!-- Debut Contenu du hero -->
+        <!-- Debut Contenu du HeaderSearch -->
         <div class="container-fluid my-5 pt-5" >
             <div class="container-fluid m-auto align-items-center justify-content-center my-5" style="padding: 0 10%;">
-                <div class="row flex-lg-row-reverse align-items-center justify-content-center">
-    
-                    <div class="col-lg-6 text-lg-end text-start position-relative ">
-                        <img src="assets/heroimg.png" alt="" class="img-fluid mb-5" >
-                    </div>
-    
-                    <div class="col-lg-6 align-items-center">
-                        <div class="lead hidden2" style="text-transform: uppercase;">
-                            Bienvenue a vous !
-                        </div>
-                        <div class="display-2 fw-bold hidden2">
-                            Trouver un <span style="color: #019442;">STAGE</span> <br> <span>n'a jamais été aussi facile</span>
-                        </div>
-                        <div class="lead mt-3 hidden2" style="font-size: 16px;">
-                            Explorez des opportunités passionnantes, postulez en toute simplicité, et démarrez votre parcours professionnel sans tracas. Bienvenue sur la plateforme où votre réussite commence
-                        </div>
                         
                         <!-- Formulaire de Recherche -->
 
@@ -132,76 +116,49 @@
                             </form>
                         </div>
 
-                    </div>
-                    
-    
-                </div>
+
+                        <!-- Texte Résultat -->
+                        <div class="mt-4 px-3">
+                            <p class="text-muted text-center fst-italic mb-4">Plus de <strong>52 stages</strong> disponibles pour vous ! Explorez les catégories ci-dessous.</p>
+                        </div>
+
+                        <!-- Liste des catégories (défilement horizontal) -->
+                        <!-- Catégorie sous forme de badge/filtre -->
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge rounded-pill bg-light text-dark border badgecategorie" style="font-size: 14px; padding: 8px 14px; cursor: pointer;">
+                                Marketing et Publicité (9)
+                            </span>
+                            <span class="badge rounded-pill bg-light text-dark border badgecategorie" style="font-size: 14px; padding: 8px 14px; cursor: pointer;">
+                                Ressources Humaines (9)
+                            </span>
+                            <span class="badge rounded-pill bg-light text-dark border badgecategorie" style="font-size: 14px; padding: 8px 14px; cursor: pointer;">
+                                Vente et Commerce (9)
+                            </span>
+                            <span class="badge rounded-pill bg-light text-dark border badgecategorie" style="font-size: 14px; padding: 8px 14px; cursor: pointer;">
+                                BTP & Architecture (9)
+                            </span>
+                            <span class="badge rounded-pill bg-light text-dark border badgecategorie" style="font-size: 14px; padding: 8px 14px; cursor: pointer;">
+                                Éducation et Formation (9)
+                            </span>
+                            <span class="badge rounded-pill bg-light text-dark border badgecategorie" style="font-size: 14px; padding: 8px 14px; cursor: pointer;">
+                                Dev Web & Mobile (2)
+                            </span>
+                            <span class="badge rounded-pill bg-light text-dark border badgecategorie" style="font-size: 14px; padding: 8px 14px; cursor: pointer;">
+                                Juridique et Parajuridique (8)
+                            </span>
+                            <span class="badge rounded-pill bg-light text-dark border badgecategorie" style="font-size: 14px; padding: 8px 14px; cursor: pointer;">
+                                Tourisme et Hôtellerie (4)
+                            </span>
+                        </div>
+
+
             </div>
         </div>
-        <!-- Fin Contenu du hero -->
-
-        <!-- Video -->
-            <div class="container-fluid py-5 position-relative">
-
-                <div class="container py-5">
-
-                    <div class="display-3 fw-bold text-center py-5">
-                        Comment ca marche ?
-                    </div>
-
-                    <img src="assets/video.png" alt="Comment ca marche avec Stagely" class="img-fluid">
-                </div>
-
-                <img src="assets/arrow1.png" alt="Fleche" class="arrow position-absolute top-0 end-0 me-5 img-fluid">
-                <img src="assets/arrow2.png" alt="Fleche" class="arrow position-absolute top-0 start-0 ms-5 img-fluid">
-
-            </div>
-        <!-- Fin du Video -->
-
-        <!-- Entreprises -->
-
-        <div class="container-fluid my-5 py-5" style="background-color: white;">
-            <div class="container-fluid m-auto" style="padding: 0 10%;">
-                <div class="row flex-lg-row align-items-center justify-content-center">
-                    <div class="col-lg-5">
-                        <div class="display-6 fw-bold">Explorez les entreprises qui recrutent</div>
-                        <div class="lead">Accédez au monde professionnel en explorant les entreprises qui offrent des opportunités de stage</div>
-                    </div>
-                            
-                    <div class="col-lg-7 logos">
-                        <div class="logos-slide">
-                          <img src="assets/bni.png" alt="Logo de BNI Madagascar"/>
-                          <img src="assets/boa.png" alt="Logo de BOA ou Bank of Africa"/>
-                          <img src="assets/airtel.png" alt="Logo d'Airtel Madagascar"/>
-                          <img src="assets/baobab.png" alt="Logo de Baobab Banque"/>
-                          <img src="assets/fdc.png" alt="Logo de FDC"/>
-                          <img src="assets/ugd.png" alt="Logo de Unite de Gouvernance Digitale de Madagascar"/>
-                        </div>
-                    </div>
-                  
-                    <script>
-                        var copy = document.querySelector(".logos-slide").cloneNode(true);
-                        document.querySelector(".logos").appendChild(copy);
-                    </script>
-
-                </div>
-            </div>
-        </div>   
-            
-        <!-- Fin section Entreprise -->
+        <!-- Fin Contenu du HeaderSearch -->
 
         <!-- Section Offres -->
-        <div class="container-fluid my-5 py-5">
+        <div class="container-fluid">
             <div class="container-fluid m-auto" style="padding: 0 10%;">
-                <!-- Section title -->
-                <div class="row flex-lg-row align-items-center justify-content-center">
-                    <div class="col-lg-6 display-6 fw-bold">
-                        Les dernieres offres :
-                    </div>
-                    <div class="col-lg-6 text-end">
-                        <a href="" class="text-decoration-none">Voir plus...</a>
-                    </div>
-                </div>
         
                 <div class="row row-cols-auto py-4 flex-row justify-content-center justify-content-lg-between align-items-center">
         
@@ -471,285 +428,14 @@
         
                 </div>
 
-                <div class="d-flex justify-content-center mt-4">
-                    <button type="button" class="btn btn-primary btn-lg rounded-pill px-4 py-3 fs-6">Voir plus d'offres</button>
-                </div>
             </div>
         </div>
         
         <!-- Fin Section Offres -->
 
-
-        <!-- Section Categorie -->
-
-        <div class="container-fluid position-relative" style="background-color: #019442; clip-path: inset(0);">
-            <div class="container py-5">
-                <div class="display-6 text-light fw-bold text-center">
-                    Parcourez par catégorie :
-                </div>
-                <div class="lead text-center text-light">Trouvez le stage qui vous convient. Environ 800 nouvelles offres chaque jour.</div>
-
-                <div class="row row-cols-auto py-4 g-4 flex-row justify-content-center justify-content-lg-between align-items-center">
-
-                    <!-- Category 1 -->
-                    <div class="col" style="max-width: 20rem;">
-                        <div class="card h-100 border-0 position-relative">
-                            <div class="card-body2 d-flex align-items-center">
-                                <div class="me-2">
-                                    <img src="assets/category1.png" alt="Marketing et Publicité Icone">
-                                </div>
-                                <div>
-                                    <div class="fw-bold" style="font-size: 20px; line-height: 24px;">Marketing et Publicité</div>
-                                    <div class="leaddescription" style="font-size: 12px;">+9 Stages disponibles</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Category 2 -->
-                    <div class="col" style="max-width: 20rem;">
-                        <div class="card h-100 border-0 position-relative">
-                            <div class="card-body2 d-flex align-items-center">
-                                <div class="me-2">
-                                    <img src="assets/category2.png" alt="Marketing et Publicité Icone">
-                                </div>
-                                <div>
-                                    <div class="fw-bold" style="font-size: 20px; line-height: 24px;">Ressources Humaines</div>
-                                    <div class="leaddescription" style="font-size: 12px;">+9 Stages disponibles</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Category 3 -->
-                    <div class="col" style="max-width: 20rem;">
-                        <div class="card h-100 border-0 position-relative">
-                            <div class="card-body2 d-flex align-items-center">
-                                <div class="me-2">
-                                    <img src="assets/category3.png" alt="Marketing et Publicité Icone">
-                                </div>
-                                <div>
-                                    <div class="fw-bold" style="font-size: 20px; line-height: 24px;">Vente et Commerce</div>
-                                    <div class="leaddescription" style="font-size: 12px;">+9 Stages disponibles</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Category 4 -->
-                    <div class="col" style="max-width: 20rem;">
-                        <div class="card h-100 border-0 position-relative">
-                            <div class="card-body2 d-flex align-items-center">
-                                <div class="me-2">
-                                    <img src="assets/category4.png" alt="Marketing et Publicité Icone">
-                                </div>
-                                <div>
-                                    <div class="fw-bold" style="font-size: 20px; line-height: 24px;">BTP & Architecture</div>
-                                    <div class="leaddescription" style="font-size: 12px;">+9 Stages disponibles</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Category 5 -->
-                    <div class="col" style="max-width: 20rem;">
-                        <div class="card h-100 border-0 position-relative">
-                            <div class="card-body2 d-flex align-items-center">
-                                <div class="me-2">
-                                    <img src="assets/category5.png" alt="Éducation et Formation Icone">
-                                </div>
-                                <div>
-                                    <div class="fw-bold" style="font-size: 20px; line-height: 24px;">Éducation et Formation</div>
-                                    <div class="leaddescription" style="font-size: 12px;">+9 Stages disponibles</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Category 6 -->
-                    <div class="col" style="max-width: 20rem;">
-                        <div class="card h-100 border-0 position-relative">
-                            <div class="card-body2 d-flex align-items-center">
-                                <div class="me-2">
-                                    <img src="assets/category6.png" alt="Dev Web & Mobile Icone">
-                                </div>
-                                <div>
-                                    <div class="fw-bold" style="font-size: 20px; line-height: 24px;">Developpement Web & Mobile</div>
-                                    <div class="leaddescription" style="font-size: 12px;">+2 Stages disponibles</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Category 7 -->
-                    <div class="col" style="max-width: 20rem;">
-                        <div class="card h-100 border-0 position-relative">
-                            <div class="card-body2 d-flex align-items-center">
-                                <div class="me-2">
-                                    <img src="assets/category7.png" alt="Juridique et Parajuridique Icone">
-                                </div>
-                                <div>
-                                    <div class="fw-bold" style="font-size: 20px; line-height: 24px;">Juridique et Parajuridique</div>
-                                    <div class="leaddescription" style="font-size: 12px;">+8 Stages disponibles</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Category 8 -->
-                    <div class="col" style="max-width: 20rem;">
-                        <div class="card h-100 border-0 position-relative">
-                            <div class="card-body2 d-flex align-items-center">
-                                <div class="me-2">
-                                    <img src="assets/category8.png" alt="Tourisme et Hôtellerie Icone">
-                                </div>
-                                <div>
-                                    <div class="fw-bold" style="font-size: 20px; line-height: 24px;">Tourisme et Hôtellerie</div>
-                                    <div class="leaddescription" style="font-size: 12px;">+4 Stages disponibles</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <img src="assets/bgelements.png" alt="BackgroundElements" class="position-absolute top-0 start-0">
-            <img src="assets/bgelements2.png" alt="BackgroundElements" class="position-absolute bottom-0 end-0">
-        </div>
-
-        <!-- Fin Categories -->
-
-        <!-- Debut Localisation -->
-
-        <div class="container-fluid">
-            <div class="container-fluid" style="padding: 100px 10%;">
-                <div class="display-6 fw-bold text-center">
-                    Stages par localisation :
-                </div>
-                <div class="lead text-center">Explorez les opportunités de stage dans la ville de votre choix.</div>
-        
-                <!-- First row of locations -->
-                <div class="row g-4 my-4">
-                    <!-- Fianarantsoa Card -->
-                    <div class="col-md-4">
-                        <div class="card rounded-4 border-0 h-100">
-                            <img src="assets/fianarantsoa.png" class="card-img-top rounded-top-4" alt="Fianarantsoa">
-                            <div class="card-body2">
-                                <h5 class="card-title fw-bold">Fianarantsoa</h5>
-                                <div class="d-flex justify-content-between">
-                                    <p class="card-text text-muted">8 offres de stage disponibles</p>
-                                    <span class="text-muted">+20 Entreprises</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Antananarivo Card -->
-                    <div class="col-md-4">
-                        <div class="card rounded-4 border-0 h-100">
-                            <img src="assets/antananarivo.png" class="card-img-top rounded-top-4" alt="Antananarivo">
-                            <div class="card-body2">
-                                <h5 class="card-title fw-bold">Antananarivo</h5>
-                                <div class="d-flex justify-content-between">
-                                    <p class="card-text text-muted">8 offres de stage disponibles</p>
-                                    <span class="text-muted">+20 Entreprises</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Antsirabe Card -->
-                    <div class="col-md-4">
-                        <div class="card rounded-4 border-0 h-100">
-                            <img src="assets/antsirabe.png" class="card-img-top rounded-top-4" alt="Antsirabe">
-                            <div class="card-body2">
-                                <h5 class="card-title fw-bold">Antsirabe</h5>
-                                <div class="d-flex justify-content-between">
-                                    <p class="card-text text-muted">8 offres de stage disponibles</p>
-                                    <span class="text-muted">+20 Entreprises</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Second row of locations -->
-                <div class="row g-4">
-                    <!-- Mahajanga Card -->
-                    <div class="col-md-4">
-                        <div class="card rounded-4 border-0 h-100">
-                            <img src="assets/Mahajanga.png" class="card-img-top rounded-top-4" alt="Mahajanga">
-                            <div class="card-body2">
-                                <h5 class="card-title fw-bold">Mahajanga</h5>
-                                <div class="d-flex justify-content-between">
-                                    <p class="card-text text-muted">8 offres de stage disponibles</p>
-                                    <span class="text-muted">+20 Entreprises</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Toliary Card -->
-                    <div class="col-md-4">
-                        <div class="card rounded-4 border-0 h-100">
-                            <img src="assets/tulear.png" class="card-img-top rounded-top-4" alt="Toliary">
-                            <div class="card-body2">
-                                <h5 class="card-title fw-bold">Toliary</h5>
-                                <div class="d-flex justify-content-between">
-                                    <p class="card-text text-muted">8 offres de stage disponibles</p>
-                                    <span class="text-muted">+20 Entreprises</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Toamasina Card -->
-                    <div class="col-md-4">
-                        <div class="card rounded-4 border-0 h-100">
-                            <img src="assets/toamasina.png" class="card-img-top rounded-top-4" alt="Toamasina">
-                            <div class="card-body2">
-                                <h5 class="card-title fw-bold">Toamasina</h5>
-                                <div class="d-flex justify-content-between">
-                                    <p class="card-text text-muted">8 offres de stage disponibles</p>
-                                    <span class="text-muted">+20 Entreprises</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Fin Localisation -->
-
-        <!-- Debut Section VA -->
-
-        <div class="container-fluid py-5" style="background-color: white;">
-            <div class="container">
-                <div class="row g-5 align-items-center">
-                    <div class="col-md-6">
-                        <img src="assets/trouver_un_stage_img.png" alt="Image VA" class="img-fluid rounded-5">
-                    </div>
-                    <div class="col-md-6">
-                        <div class="lead fw-bold">Des Milliers d'Opportunités.</div>
-                        <div class="display-5 fw-bold">Trouvez celle qui vous convient</div>
-                        <div class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula ipsum id accumsan eleifend. Fusce ut tristique velit. Maecenas ac turpis a ex bibendum fermentum. Duis consectetur justo id ligula hendrerit, ac condimentum purus bibendum.</div>
-                        <div class="d-flex justify-content-start gap-3 mt-3">
-                            <button type="button" class="btn btn-primary btn-lg rounded-pill px-4 py-3 fs-6">Parcourir les offres</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Fin Section VA -->
-
         <!-- Section Blog -->
 
-            <div class="container-fluid py-5">
+            <div class="container-fluid py-5" style="background-color: white;">
                 <div class="container">
                     <div class="display-6 fw-bold text-center">
                         Conseils et Blog :

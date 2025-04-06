@@ -232,3 +232,9 @@ body{
   .display-5{
     color: var(--main-color);
   }
+
+
+  .badgecategorie:hover{
+    background-color: var(--main-color) !important;
+    color: white !important;
+  }
