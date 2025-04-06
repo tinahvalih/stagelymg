@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+
+:root {
+    --main-color: #019442;
+    --black-color: #1c1c1c;
+    --white-bg: #EFEFEF
+}
+
+body{
+    background-color: var(--white-bg);
+}
+
+.active{
+    color: var(--main-color) !important;
+    font-weight: 700;
+}
+
+.nav-link{
+    font-weight: 500;
+    color: var(--black-color);
+    font-size: 16px;
+}
+
+.nav-link:hover{
+    color: var(--main-color) !important;
+}
+
+/* Hover Animation */
+
+.nav-link {
+    text-decoration: none;
+    display: inline-block;
+}
+.nav-link .border-hover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--main-color);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+    transform-origin: bottom right;
+}
+.nav-link:hover .border-hover {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Search Engine */
+
+/* Styles pour le formulaire de recherche */
+.search-form-container {
+    max-width: 100%;
+    background-color: white;
+}
+
+.search-form-container .form-control:focus {
+    box-shadow: none;
+}
+
+.search-form-container .form-control {
+    font-size: 16px;
+}
+
+.search-form-container .btn-success {
+    background-color: var(--main-color) !important;
+    border-color: var(--main-color) !important;
+}
+
+/* Pour s'assurer que le formulaire est arrondi correctement */
+.search-form-container form {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Couleur du texte et des icônes */
+.search-form-container .bi-briefcase-fill,
+.search-form-container .bi-geo-alt-fill {
+    color: var(--main-color);
+    font-size: 26px;
+}
+
+/* Style du séparateur vertical */
+.search-form-container .vr {
+    opacity: 0.2;
+}
+
+@media (max-width: 960px) {
+    .arrow{
+        display: none;
+    }
+}
+
+  @media screen and (max-width: 1700px) {
+    .display-2 {
+      font-size: 50px;
+    }
+  }
+
+
+  .display-6{
+    color: var(--main-color);
+  }
+
+  /* Logo slider */
+
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  }
+  
+  .logos:hover .logos-slide {
+    animation-play-state: paused;
+  }
+  
+  .logos-slide {
+    display: inline-block;
+    animation: 20s slide infinite linear;
+  }
+  
+  .logos-slide img {
+    height: 120px;
+    margin: 0 40px;
+    filter: grayscale(.5);
+    opacity: 0.3;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .logos-slide img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0);
+    opacity: 1;
+  }
+
+  .btn{
+    border: none;
+  }
+
+.card{
+  border-radius: 24px;
+  border:  solid 1px #1c1c1c3a !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover{
+  transform: translateY(-5px);
+  border: solid 1px var(--main-color) !important;
+}
+
+  .card-body{
+    padding: 32px 28px;
+  }
+  .card-title{
+    font-size: 32px;
+  }
+
+  .classbtn{
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .classbtn:hover{
+    transform: scale(1.1);
+  }
+
+  .badge{
+    padding: 8px 16px !important
+  }
+
+  .locationbadge{
+    background-color: #94C120 !important;  
+  }
+
+  .text-bg-danger{
+    background-color: #FC3A00 !important;
+  }
+
+  .category{
+    color: var(--black-color) !important;
+    opacity: .7;
+    transition: all 0.2s ease-in-out;
+    font-size: 12px;
+  }
+
+  .category:hover{
+    opacity: 1;
+  }
+
+    .card-body2{
+    padding: 16px 20px;
+  }

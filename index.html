@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stagely MG - Accueil</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/navicon.svg">
+</head>
+<body>
+
+    <!-- Barre de Navigation -->
+
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top" style="background-color: white;">
+        <div class="container-fluid"  style="padding: 16px 10%;">
+
+            <!-- Logo -->
+
+            <a class="navbar-brand" href="#">
+                <img src="assets/stagelylogo.png" height="32px" width="auto">
+            </a>
+
+            <!-- Menu Responsive -->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Contenu de la barre de navigation -->
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 gap-5">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" style="position: relative;">
+                                Trouver un stage
+                                <span class="border-hover"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#" style="position: relative;">
+                                Trouver un candidat
+                                <span class="border-hover"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#" style="position: relative;">
+                                Parcourir les entreprise
+                                <span class="border-hover"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#" style="position: relative;">
+                                Conseil & Blog
+                                <span class="border-hover"></span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="navbar-nav justify-content-center align-items-center d-none d-lg-flex">
+                <button type="button" class="btn btn-primary btn-lg rounded-pill px-4 py-3 fs-6"><i class="bi bi-people-fill"></i> Se connecter</button>
+            </div>
+        </div>
+    </nav>
+
+        <!-- Debut Contenu du hero -->
+        <div class="container-fluid my-5 pt-5" >
+            <div class="container-fluid m-auto align-items-center justify-content-center my-5" style="padding: 0 10%;">
+                <div class="row flex-lg-row-reverse align-items-center justify-content-center">
+    
+                    <div class="col-lg-6 text-lg-end text-start position-relative ">
+                        <img src="assets/heroimg.png" alt="" class="img-fluid mb-5" >
+                    </div>
+    
+                    <div class="col-lg-6 align-items-center">
+                        <div class="lead hidden2" style="text-transform: uppercase;">
+                            Bienvenue a vous !
+                        </div>
+                        <div class="display-2 fw-bold hidden2">
+                            Trouver un <span style="color: #019442;">STAGE</span> <br> <span>n'a jamais été aussi facile</span>
+                        </div>
+                        <div class="lead mt-3 hidden2" style="font-size: 16px;">
+                            Explorez des opportunités passionnantes, postulez en toute simplicité, et démarrez votre parcours professionnel sans tracas. Bienvenue sur la plateforme où votre réussite commence
+                        </div>
+                        
+                        <!-- Formulaire de Recherche -->
+
+                        <div class="search-form-container mt-4 rounded-pill overflow-hidden bg-white">
+                            <form class="d-flex align-items-center">
+                                <div class="d-flex align-items-center flex-grow-1 align-content-center">
+                                    <!-- Champ de recherche type de stage -->
+                                    <div class="input-group border-0 p-2 ps-4 pe-3">
+                                        <span class="input-group-text bg-transparent border-0">
+                                            <i class="bi bi-briefcase-fill text-success"></i>
+                                        </span>
+                                        <input type="text" class="form-control border-0" placeholder="Je recherche un stage de/en">
+                                    </div>
+                                    
+                                    <!-- Séparateur vertical -->
+                                    <div class="vr" style="height: 70px;"></div>
+                                    
+                                    <!-- Champ de recherche localisation -->
+                                    <div class="input-group border-0 p-2 ps-3 pe-2">
+                                        <span class="input-group-text bg-transparent border-0">
+                                            <i class="bi bi-geo-alt-fill text-success"></i>
+                                        </span>
+                                        <select class="form-select border-0" aria-label="Default select example">
+                                            <option value="" selected>Ville</option>
+                                            <option value="1">Antsirabe</option>
+                                            <option value="2">Fianarantsoa</option>
+                                            <option value="3">Antananarivo</option>
+                                            <option value="4">Toliara</option>
+                                            <option value="5">Mahajanga</option>
+                                            <option value="6">Antsiranana</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <!-- Bouton de recherche -->
+                                <button class="btn btn-success btn-lg rounded-end-pill px-4 py-3" type="submit">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
+                    
+    
+                </div>
+            </div>
+        </div>
+        <!-- Fin Contenu du hero -->
+
+        <!-- Video -->
+            <div class="container-fluid py-5 position-relative">
+
+                <div class="container py-5">
+
+                    <div class="display-3 fw-bold text-center py-5">
+                        Comment ca marche ?
+                    </div>
+
+                    <img src="assets/video.png" alt="Comment ca marche avec Stagely" class="img-fluid">
+                </div>
+
+                <img src="assets/arrow1.png" alt="Fleche" class="arrow position-absolute top-0 end-0 me-5 img-fluid">
+                <img src="assets/arrow2.png" alt="Fleche" class="arrow position-absolute top-0 start-0 ms-5 img-fluid">
+
+            </div>
+        <!-- Fin du Video -->
+
+        <!-- Entreprises -->
+
+        <div class="container-fluid my-5 py-5" style="background-color: white;">
+            <div class="container-fluid m-auto" style="padding: 0 10%;">
+                <div class="row flex-lg-row align-items-center justify-content-center">
+                    <div class="col-lg-5">
+                        <div class="display-6 fw-bold">Explorez les entreprises qui recrutent</div>
+                        <div class="lead">Accédez au monde professionnel en explorant les entreprises qui offrent des opportunités de stage</div>
+                    </div>
+                            
+                    <div class="col-lg-7 logos">
+                        <div class="logos-slide">
+                          <img src="assets/bni.png" alt="Logo de BNI Madagascar"/>
+                          <img src="assets/boa.png" alt="Logo de BOA ou Bank of Africa"/>
+                          <img src="assets/airtel.png" alt="Logo d'Airtel Madagascar"/>
+                          <img src="assets/baobab.png" alt="Logo de Baobab Banque"/>
+                          <img src="assets/fdc.png" alt="Logo de FDC"/>
+                          <img src="assets/ugd.png" alt="Logo de Unite de Gouvernance Digitale de Madagascar"/>
+                        </div>
+                    </div>
+                  
+                    <script>
+                        var copy = document.querySelector(".logos-slide").cloneNode(true);
+                        document.querySelector(".logos").appendChild(copy);
+                    </script>
+
+                </div>
+            </div>
+        </div>   
+            
+        <!-- Fin section Entreprise -->
+
+        <!-- Section Offres -->
+        <div class="container-fluid my-5 py-5">
+            <div class="container-fluid m-auto" style="padding: 0 10%;">
+                <!-- Section title -->
+                <div class="row flex-lg-row align-items-center justify-content-center">
+                    <div class="col-lg-6 display-6 fw-bold">
+                        Les dernieres offres :
+                    </div>
+                    <div class="col-lg-6 text-end">
+                        <a href="" class="text-decoration-none">Voir plus...</a>
+                    </div>
+                </div>
+        
+                <div class="row row-cols-auto py-4 flex-row justify-content-center justify-content-lg-between align-items-center">
+        
+                    <!-- Community Manager Card -->
+                    <div class="col my-3" style="width: 23rem;">
+                        <div class="card h-100 border-0 position-relative">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <img src="assets/communitymanagerico.png" alt="Icone Community Manager" class="img-fluid" style="width: 60px;">
+                                </div>
+                                <h5 class="card-title mb-3">Community Manager</h5>
+                                <div class="d-flex justify-content-start gap-2 mb-2">
+                                    <span class="badge rounded-pill px-3 locationbadge">
+                                        <i class="bi bi-geo-alt-fill"></i> Fianarantsoa
+                                    </span>
+                                    <span class="badge rounded-pill text-bg-danger px-3">
+                                        <i class="bi bi-clock"></i> Temps-plein
+                                    </span>
+                                </div>
+                                <p class="card-text mb-2">
+                                    <a href="#" class="text-decoration-none category">Informatique</a> -
+                                    <a href="#" class="text-decoration-none category">Web</a> -
+                                    <a href="#" class="text-decoration-none category">Communication</a>
+                                </p>
+                                <p class="card-text text-muted small">il y a 2 heures</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <img src="assets/boa.png" alt="Company" height="56px">
+                                    <div class="d-flex gap-3 align-items-center justify-content-center">
+                                        <img src="assets/save.svg" alt="Enregistrer l'offre" class="classbtn">
+                                        <img src="assets/share.svg" alt="Partager l'offre" class="classbtn">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- UI & UX Designer Card -->
+                    <div class="col my-3" style="width: 23rem;">
+                        <div class="card h-100 border-0 position-relative">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <img src="assets/uxui.png" alt="Icone UI & UX Designer" class="img-fluid" style="width: 60px;">
+                                </div>
+                                <h5 class="card-title mb-3">UI et UX <br> Designer H/F</h5>
+                                <div class="d-flex justify-content-start gap-2 mb-2">
+                                    <span class="badge rounded-pill px-3 locationbadge">
+                                        <i class="bi bi-geo-alt-fill"></i> Antsirabe
+                                    </span>
+                                    <span class="badge rounded-pill text-bg-danger px-3">
+                                        <i class="bi bi-clock"></i> Temps Partiel
+                                    </span>
+                                </div>
+                                <p class="card-text mb-2">
+                                    <a href="#" class="text-decoration-none category">Informatique</a> -
+                                    <a href="#" class="text-decoration-none category">Web</a> -
+                                    <a href="#" class="text-decoration-none category">Graphiste</a>
+                                </p>
+                                <p class="card-text text-muted small">il y a 3 jours</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <img src="assets/bni.png" alt="Company" height="56px">
+                                    <div class="d-flex gap-3 align-items-center justify-content-center">
+                                        <img src="assets/save.svg" alt="Enregistrer l'offre" class="classbtn">
+                                        <img src="assets/share.svg" alt="Partager l'offre" class="classbtn">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>            
+        
+                    <!-- Chef de Chantier Card -->
+                    <div class="col my-3" style="width: 23rem;">
+                        <div class="card h-100 border-0 position-relative">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <img src="assets/chefdechantier.png" alt="Icone Chef de Chantier" class="img-fluid" style="width: 60px;">
+                                </div>
+                                <h5 class="card-title mb-3">Chef de Chantier - CDI - H/F</h5>
+                                <div class="d-flex justify-content-start gap-2 mb-2">
+                                    <span class="badge rounded-pill px-3 locationbadge">
+                                        <i class="bi bi-geo-alt-fill"></i> Fianarantsoa
+                                    </span>
+                                    <span class="badge rounded-pill text-bg-danger px-3">
+                                        <i class="bi bi-clock"></i> Temps-plein
+                                    </span>
+                                </div>
+                                <p class="card-text mb-2">
+                                    <a href="#" class="text-decoration-none category">Informatique</a> -
+                                    <a href="#" class="text-decoration-none category">Web</a> -
+                                    <a href="#" class="text-decoration-none category">Communication</a>
+                                </p>
+                                <p class="card-text text-muted small">il y a 2 semaines</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <img src="assets/fdc.png" alt="Company" height="56px">
+                                    <div class="d-flex gap-3 align-items-center justify-content-center">
+                                        <img src="assets/save.svg" alt="Enregistrer l'offre" class="classbtn">
+                                        <img src="assets/share.svg" alt="Partager l'offre" class="classbtn">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Product Owner Card -->
+                    <div class="col my-3" style="width: 23rem;">
+                        <div class="card h-100 border-0 position-relative">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <img src="assets/product.png" alt="Icone Product Owner" class="img-fluid" style="width: 60px;">
+                                </div>
+                                <h5 class="card-title mb-3">Product Owner H/F</h5>
+                                <div class="d-flex justify-content-start gap-2 mb-2">
+                                    <span class="badge rounded-pill px-3 locationbadge">
+                                        <i class="bi bi-geo-alt-fill"></i> Fianarantsoa
+                                    </span>
+                                    <span class="badge rounded-pill text-bg-danger px-3">
+                                        <i class="bi bi-clock"></i> Temps Partiel
+                                    </span>
+                                </div>
+                                <p class="card-text mb-2">
+                                    <a href="#" class="text-decoration-none category">Informatique</a> -
+                                    <a href="#" class="text-decoration-none category">Web</a> -
+                                    <a href="#" class="text-decoration-none category">Communication</a>
+                                </p>
+                                <p class="card-text text-muted small">il y a 5 heures</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <img src="assets/baobab.png" alt="Company" height="56px">
+                                    <div class="d-flex gap-3 align-items-center justify-content-center">
+                                        <img src="assets/save.svg" alt="Enregistrer l'offre" class="classbtn">
+                                        <img src="assets/share.svg" alt="Partager l'offre" class="classbtn">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>            
+        
+                    <!-- Chef de Chantier Card -->
+                    <div class="col my-3" style="width: 23rem;">
+                        <div class="card h-100 border-0 position-relative">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <img src="assets/chefdechantier.png" alt="Icone Chef de Chantier" class="img-fluid" style="width: 60px;">
+                                </div>
+                                <h5 class="card-title mb-3">Chef de Chantier - CDI - H/F</h5>
+                                <div class="d-flex justify-content-start gap-2 mb-2">
+                                    <span class="badge rounded-pill px-3 locationbadge">
+                                        <i class="bi bi-geo-alt-fill"></i> Fianarantsoa
+                                    </span>
+                                    <span class="badge rounded-pill text-bg-danger px-3">
+                                        <i class="bi bi-clock"></i> Temps-plein
+                                    </span>
+                                </div>
+                                <p class="card-text mb-2">
+                                    <a href="#" class="text-decoration-none category">Informatique</a> -
+                                    <a href="#" class="text-decoration-none category">Web</a> -
+                                    <a href="#" class="text-decoration-none category">Communication</a>
+                                </p>
+                                <p class="card-text text-muted small">il y a 2 semaines</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <img src="assets/baobab.png" alt="Company" height="56px">
+                                    <div class="d-flex gap-3 align-items-center justify-content-center">
+                                        <img src="assets/save.svg" alt="Enregistrer l'offre" class="classbtn">
+                                        <img src="assets/share.svg" alt="Partager l'offre" class="classbtn">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Product Owner Card -->
+                    <div class="col my-3" style="width: 23rem;">
+                        <div class="card h-100 border-0 position-relative">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <img src="assets/product.png" alt="Icone Product Owner" class="img-fluid" style="width: 60px;">
+                                </div>
+                                <h5 class="card-title mb-3">Product Owner H/F</h5>
+                                <div class="d-flex justify-content-start gap-2 mb-2">
+                                    <span class="badge rounded-pill px-3 locationbadge">
+                                        <i class="bi bi-geo-alt-fill"></i> Fianarantsoa
+                                    </span>
+                                    <span class="badge rounded-pill text-bg-danger px-3">
+                                        <i class="bi bi-clock"></i> Temps-plein
+                                    </span>
+                                </div>
+                                <p class="card-text mb-2">
+                                    <a href="#" class="text-decoration-none category">Informatique</a> -
+                                    <a href="#" class="text-decoration-none category">Web</a> -
+                                    <a href="#" class="text-decoration-none category">Communication</a>
+                                </p>
+                                <p class="card-text text-muted small">il y a 5 heures</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <img src="assets/ugd.png" alt="Company" height="56px">
+                                    <div class="d-flex gap-3 align-items-center justify-content-center">
+                                        <img src="assets/save.svg" alt="Enregistrer l'offre" class="classbtn">
+                                        <img src="assets/share.svg" alt="Partager l'offre" class="classbtn">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Community Manager Card -->
+                    <div class="col my-3" style="width: 23rem;">
+                        <div class="card h-100 border-0 position-relative">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <img src="assets/communitymanagerico.png" alt="Icone Community Manager" class="img-fluid" style="width: 60px;">
+                                </div>
+                                <h5 class="card-title mb-3">Community Manager</h5>
+                                <div class="d-flex justify-content-start gap-2 mb-2">
+                                    <span class="badge rounded-pill px-3 locationbadge">
+                                        <i class="bi bi-geo-alt-fill"></i> Fianarantsoa
+                                    </span>
+                                    <span class="badge rounded-pill text-bg-danger px-3">
+                                        <i class="bi bi-clock"></i> Temps-plein
+                                    </span>
+                                </div>
+                                <p class="card-text mb-2">
+                                    <a href="#" class="text-decoration-none category">Informatique</a> -
+                                    <a href="#" class="text-decoration-none category">Web</a> -
+                                    <a href="#" class="text-decoration-none category">Communication</a>
+                                </p>
+                                <p class="card-text text-muted small">il y a 2 heures</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <img src="assets/boa.png" alt="Company" height="56px">
+                                    <div class="d-flex gap-3 align-items-center justify-content-center">
+                                        <img src="assets/save.svg" alt="Enregistrer l'offre" class="classbtn">
+                                        <img src="assets/share.svg" alt="Partager l'offre" class="classbtn">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- UI & UX Designer Card -->
+                    <div class="col my-3" style="width: 23rem;">
+                        <div class="card h-100 border-0 position-relative">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <img src="assets/uxui.png" alt="Icone UI & UX Designer" class="img-fluid" style="width: 60px;">
+                                </div>
+                                <h5 class="card-title mb-3">UI et UX <br> Designer H/F</h5>
+                                <div class="d-flex justify-content-start gap-2 mb-2">
+                                    <span class="badge rounded-pill px-3 locationbadge">
+                                        <i class="bi bi-geo-alt-fill"></i> Antsirabe
+                                    </span>
+                                    <span class="badge rounded-pill text-bg-danger px-3">
+                                        <i class="bi bi-clock"></i> Temps Partiel
+                                    </span>
+                                </div>
+                                <p class="card-text mb-2">
+                                    <a href="#" class="text-decoration-none category">Informatique</a> -
+                                    <a href="#" class="text-decoration-none category">Web</a> -
+                                    <a href="#" class="text-decoration-none category">Graphiste</a>
+                                </p>
+                                <p class="card-text text-muted small">il y a 3 jours</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <img src="assets/bni.png" alt="Company" height="56px">
+                                    <div class="d-flex gap-3 align-items-center justify-content-center">
+                                        <img src="assets/save.svg" alt="Enregistrer l'offre" class="classbtn">
+                                        <img src="assets/share.svg" alt="Partager l'offre" class="classbtn">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+        
+                </div>
+            </div>
+        </div>
+        
+        <!-- Fin Section Offres -->
+
+
+        <!-- Section Categorie -->
+
+        <div class="container-fluid position-relative" style="background-color: #019442; clip-path: inset(0);">
+            <div class="container py-5">
+                <div class="display-6 text-light fw-bold text-center">
+                    Parcourez par catégorie :
+                </div>
+                <div class="lead text-center text-light">Trouvez le stage qui vous convient. Environ 800 nouvelles offres chaque jour.</div>
+
+                <div class="row row-cols-auto py-4 g-4 flex-row justify-content-center justify-content-lg-between align-items-center">
+
+                    <!-- Category 1 -->
+                    <div class="col" style="max-width: 20rem;">
+                        <div class="card h-100 border-0 position-relative">
+                            <div class="card-body2 d-flex align-items-center">
+                                <div class="me-2">
+                                    <img src="assets/category1.png" alt="Marketing et Publicité Icone">
+                                </div>
+                                <div>
+                                    <div class="fw-bold" style="font-size: 20px; line-height: 24px;">Marketing et Publicité</div>
+                                    <div class="leaddescription" style="font-size: 12px;">+9 Stages disponibles</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 2 -->
+                    <div class="col" style="max-width: 20rem;">
+                        <div class="card h-100 border-0 position-relative">
+                            <div class="card-body2 d-flex align-items-center">
+                                <div class="me-2">
+                                    <img src="assets/category2.png" alt="Marketing et Publicité Icone">
+                                </div>
+                                <div>
+                                    <div class="fw-bold" style="font-size: 20px; line-height: 24px;">Ressources Humaines</div>
+                                    <div class="leaddescription" style="font-size: 12px;">+9 Stages disponibles</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 3 -->
+                    <div class="col" style="max-width: 20rem;">
+                        <div class="card h-100 border-0 position-relative">
+                            <div class="card-body2 d-flex align-items-center">
+                                <div class="me-2">
+                                    <img src="assets/category3.png" alt="Marketing et Publicité Icone">
+                                </div>
+                                <div>
+                                    <div class="fw-bold" style="font-size: 20px; line-height: 24px;">Vente et Commerce</div>
+                                    <div class="leaddescription" style="font-size: 12px;">+9 Stages disponibles</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 4 -->
+                    <div class="col" style="max-width: 20rem;">
+                        <div class="card h-100 border-0 position-relative">
+                            <div class="card-body2 d-flex align-items-center">
+                                <div class="me-2">
+                                    <img src="assets/category4.png" alt="Marketing et Publicité Icone">
+                                </div>
+                                <div>
+                                    <div class="fw-bold" style="font-size: 20px; line-height: 24px;">BTP & Architecture</div>
+                                    <div class="leaddescription" style="font-size: 12px;">+9 Stages disponibles</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 5 -->
+                    <div class="col" style="max-width: 20rem;">
+                        <div class="card h-100 border-0 position-relative">
+                            <div class="card-body2 d-flex align-items-center">
+                                <div class="me-2">
+                                    <img src="assets/category5.png" alt="Éducation et Formation Icone">
+                                </div>
+                                <div>
+                                    <div class="fw-bold" style="font-size: 20px; line-height: 24px;">Éducation et Formation</div>
+                                    <div class="leaddescription" style="font-size: 12px;">+9 Stages disponibles</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 6 -->
+                    <div class="col" style="max-width: 20rem;">
+                        <div class="card h-100 border-0 position-relative">
+                            <div class="card-body2 d-flex align-items-center">
+                                <div class="me-2">
+                                    <img src="assets/category6.png" alt="Dev Web & Mobile Icone">
+                                </div>
+                                <div>
+                                    <div class="fw-bold" style="font-size: 20px; line-height: 24px;">Developpement Web & Mobile</div>
+                                    <div class="leaddescription" style="font-size: 12px;">+2 Stages disponibles</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 7 -->
+                    <div class="col" style="max-width: 20rem;">
+                        <div class="card h-100 border-0 position-relative">
+                            <div class="card-body2 d-flex align-items-center">
+                                <div class="me-2">
+                                    <img src="assets/category7.png" alt="Juridique et Parajuridique Icone">
+                                </div>
+                                <div>
+                                    <div class="fw-bold" style="font-size: 20px; line-height: 24px;">Juridique et Parajuridique</div>
+                                    <div class="leaddescription" style="font-size: 12px;">+8 Stages disponibles</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 8 -->
+                    <div class="col" style="max-width: 20rem;">
+                        <div class="card h-100 border-0 position-relative">
+                            <div class="card-body2 d-flex align-items-center">
+                                <div class="me-2">
+                                    <img src="assets/category8.png" alt="Tourisme et Hôtellerie Icone">
+                                </div>
+                                <div>
+                                    <div class="fw-bold" style="font-size: 20px; line-height: 24px;">Tourisme et Hôtellerie</div>
+                                    <div class="leaddescription" style="font-size: 12px;">+4 Stages disponibles</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <img src="assets/bgelements.png" alt="BackgroundElements" class="position-absolute top-0 start-0">
+            <img src="assets/bgelements2.png" alt="BackgroundElements" class="position-absolute bottom-0 end-0">
+        </div>
+
+        <!-- Fin Categories -->
+
+        <!-- Debut Localisation -->
+
+        <div class="container-fluid">
+            <div class="container-fluid py-5" style="padding: 0 10%;">
+                <div class="display-6 fw-bold text-center">
+                    Stages par localisation :
+                </div>
+                <div class="lead text-center">Explorez les opportunités de stage dans la ville de votre choix.</div>
+        
+                <div class="row g-4 my-4">
+                    <!-- Fianarantsoa Card -->
+                    <div class="col-md-4">
+                        <div class="card rounded-4 border-0 h-100">
+                            <img src="assets/fianarantsoa.png" class="card-img-top rounded-top-4" alt="Fianarantsoa">
+                            <div class="card-body2">
+                                <h5 class="card-title fw-bold">Fianarantsoa</h5>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text text-muted">8 offres de stage disponibles</p>
+                                    <span class="text-muted">+20 Entreprises</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Antananarivo Card -->
+                    <div class="col-md-4">
+                        <div class="card rounded-4 border-0 h-100">
+                            <img src="assets/antananarivo.png" class="card-img-top rounded-top-4" alt="Antananarivo">
+                            <div class="card-body2">
+                                <h5 class="card-title fw-bold">Antananarivo</h5>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text text-muted">8 offres de stage disponibles</p>
+                                    <span class="text-muted">+20 Entreprises</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Antsirabe Card -->
+                    <div class="col-md-4">
+                        <div class="card rounded-4 border-0 h-100">
+                            <img src="assets/antsirabe.png" class="card-img-top rounded-top-4" alt="Antsirabe">
+                            <div class="card-body2">
+                                <h5 class="card-title fw-bold">Antsirabe</h5>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text text-muted">8 offres de stage disponibles</p>
+                                    <span class="text-muted">+20 Entreprises</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Second row of locations -->
+                <div class="row g-4">
+                    <!-- Mahajanga Card -->
+                    <div class="col-md-4">
+                        <div class="card rounded-4 border-0 h-100">
+                            <img src="assets/Mahajanga.png" class="card-img-top rounded-top-4" alt="Mahajanga">
+                            <div class="card-body2">
+                                <h5 class="card-title fw-bold">Mahajanga</h5>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text text-muted">8 offres de stage disponibles</p>
+                                    <span class="text-muted">+20 Entreprises</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Toliary Card -->
+                    <div class="col-md-4">
+                        <div class="card rounded-4 border-0 h-100">
+                            <img src="assets/tulear.png" class="card-img-top rounded-top-4" alt="Toliary">
+                            <div class="card-body2">
+                                <h5 class="card-title fw-bold">Toliary</h5>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text text-muted">8 offres de stage disponibles</p>
+                                    <span class="text-muted">+20 Entreprises</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Toamasina Card -->
+                    <div class="col-md-4">
+                        <div class="card rounded-4 border-0 h-100">
+                            <img src="assets/toamasina.png" class="card-img-top rounded-top-4" alt="Toamasina">
+                            <div class="card-body2">
+                                <h5 class="card-title fw-bold">Toamasina</h5>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text text-muted">8 offres de stage disponibles</p>
+                                    <span class="text-muted">+20 Entreprises</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Fin Localisation -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
