@@ -228,3 +228,7 @@ body{
     .card-body2{
     padding: 16px 20px;
   }
+
+  .display-5{
+    color: var(--main-color);
+  }
