@@ -5,7 +5,6 @@
     font-family: Poppins;
 }
 
-
 :root {
     --main-color: #019442;
     --black-color: #1c1c1c;
@@ -229,7 +228,7 @@ body{
     padding: 16px 20px;
   }
 
-  .display-5{
+  .display-5, .display-4{
     color: var(--main-color);
   }
 
@@ -238,3 +237,127 @@ body{
     background-color: var(--main-color) !important;
     color: white !important;
   }
+
+  a{
+    text-decoration: none !important;
+    color: #1c1c1c !important;
+  }
+
+
+  /* Student Candidat */
+  .profile-card {
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.profile-header {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.profile-title {
+    color: #6c757d;
+}
+
+.rating {
+    color: #ffc107;
+}
+
+.rating-count {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.university {
+    display: flex;
+    align-items: center;
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+.university i {
+    margin-right: 8px;
+}
+
+.profile-body {
+    padding: 0 20px 15px;
+}
+
+.profile-description {
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+
+.profile-tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.tag {
+    background-color: #f8f9fa;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.profile-footer {
+    border-top: 1px solid #dee2e6;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.location i {
+    margin-right: 8px;
+    color: #6c757d;
+}
+
+.actions {
+    display: flex;
+}
+
+.action-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.bookmark {
+    color: #28a745;
+    border: 2px solid #28a745;
+}
+
+.share {
+    color: white;
+    background-color: #28a745;
+}

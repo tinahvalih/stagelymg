@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stagely MG - Entreprises</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/navicon.svg">
+</head>
+<body>
+
+    <!-- Barre de Navigation -->
+
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top" style="background-color: white;">
+        <div class="container-fluid"  style="padding: 16px 10%;">
+
+            <!-- Logo -->
+
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/stagelylogo.png" height="32px" width="auto">
+            </a>
+
+            <!-- Menu Responsive -->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Contenu de la barre de navigation -->
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 gap-5">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="searching.html" style="position: relative;">
+                                Trouver un stage
+                                <span class="border-hover"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="searchprofile.html" style="position: relative;">
+                                Trouver un candidat
+                                <span class="border-hover"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="searchese.html" style="position: relative;">
+                                Parcourir les entreprise
+                                <span class="border-hover"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#" style="position: relative;">
+                                Conseil & Blog
+                                <span class="border-hover"></span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="navbar-nav justify-content-center align-items-center d-none d-lg-flex">
+                <a href="searching.html"><i type="button" class="bi bi-search btn btn-primary me-4 px-4 py-3 rounded-pill"></i></a>
+                <button type="button" class="btn btn-primary btn-lg rounded-pill px-4 py-3 fs-6"><i class="bi bi-people-fill"></i> Se connecter</button>
+            </div>
+        </div>
+    </nav>
+
+        <!-- Section Photo de Couverture et Titre Offre -->
+        <div class="container-fluid py-5 ">
+            <div class="container-fluid m-auto pt-3" style="padding: 0 10%;">
+
+                <div class="pdc mt-5 text-center rounded-5 py-5" style="background-color: white;">
+                    <div class="display-4 fw-bold container my-3">Parcourir les entreprises qui recrutent</div>
+                    <div class="lead container mb-3">Lorem ipsum dolor sit amet consectetur. Praesent et nibh sit tincidunt ultrices risus diam eu auctor. Neque laoreet at pellentesque est aliquam malesuada. Dolor eget maecenas ultrices</div>
+                
+                </div>
+                <!-- Barre de recherche et filtres -->
+                <div class="d-flex flex-wrap justify-content-between gap-3 mt-4">
+                    <!-- Input de recherche -->
+                    <div class="input-group" style="max-width: 350px;">
+                    <input type="text" class="form-control py-3 px-4 rounded-start-pill" placeholder="Rechercher une Entreprise">
+                    <button class="btn btn-success py-3 px-4 rounded-end-pill" type="button"><i class="bi bi-search"></i></button>
+                    </div>
+
+                    <!-- Filtres -->
+                    <select class="form-select py-3 px-4 rounded-pill" style="max-width: 250px;">
+                    <option selected>Secteurs</option>
+                    <option value="1">Développement Web</option>
+                    <option value="2">Marketing</option>
+                    <option value="3">Design</option>
+                    </select>
+
+                    <select class="form-select py-3 px-4 rounded-pill" style="max-width: 250px;">
+                    <option selected>Villes ou Regions</option>
+                    <option value="1">Antsirabe</option>
+                    <option value="2">Fianarantsoa</option>
+                    <option value="3">Antananarivo</option>
+                    <option value="4">Toliara</option>
+                    <option value="5">Mahajanga</option>
+                    <option value="6">Antsiranana</option>
+                    </select>
+
+                    <select class="form-select py-3 px-4 rounded-pill" style="max-width: 250px;">
+                    <option selected>Trier par</option>
+                    <option value="1">Nom</option>
+                    <option value="2">Note</option>
+                    </select>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!-- Fin Section Photo de Couverture et Titre Offre -->
+
+        <!-- Section Offres -->
+        <div class="container-fluid">
+            <div class="container-fluid mt-5" style="padding: 0 10%;">
+                <div class="row">
+                    
+                    <!-- Card 1 (pour démontrer le saut de ligne) -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card profile-card text-center">
+                            <!-- Contenu identique au Card 1 -->
+                            <div class="profile-header flex-column">
+                                <img src="assets/bnipill.png" alt="Profile Image" class="profile-avatar">
+                                <div>
+                                    <div class="rating" style="color: orange;">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                        <span class="rating-count">(4)</span>
+                                    </div>
+                                    <h3 class="profile-name" style="margin: 0;"><a href="ese.html">BNI Madagascar</a></h3>
+                                </div>
+                            </div>
+                            <div class="profile-footer">
+                                <div class="location">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <span>74, rue du 26 juin 1960<br>Analakely, Antananarivo</span>
+                                </div>
+                                <div class="actions">
+                                    <div class="action-btn share">
+                                        <i class="bi bi-share-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card profile-card text-center">
+                            <!-- Contenu identique au Card 1 -->
+                            <div class="profile-header flex-column">
+                                <img src="assets/aritelpill.png" alt="Profile Image" class="profile-avatar">
+                                <div>
+                                    <div class="rating" style="color: orange;">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <span class="rating-count">(5)</span>
+                                    </div>
+                                    <h3 class="profile-name" style="margin: 0;">Airtel Madagascar</h3>
+                                </div>
+                            </div>
+                            <div class="profile-footer">
+                                <div class="location">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <span>74, rue du 26 juin 1960<br>Analakely, Antananarivo</span>
+                                </div>
+                                <div class="actions">
+                                    <div class="action-btn share">
+                                        <i class="bi bi-share-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card profile-card text-center">
+                            <!-- Contenu identique au Card 1 -->
+                            <div class="profile-header flex-column">
+                                <img src="assets/BOApill.png" alt="Profile Image" class="profile-avatar">
+                                <div>
+                                    <div class="rating" style="color: orange;">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <span class="rating-count">(5)</span>
+                                    </div>
+                                    <h3 class="profile-name" style="margin: 0;">BOA Madagascar</h3>
+                                </div>
+                            </div>
+                            <div class="profile-footer">
+                                <div class="location">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <span>74, rue du 26 juin 1960<br>Analakely, Antananarivo</span>
+                                </div>
+                                <div class="actions">
+                                    <div class="action-btn share">
+                                        <i class="bi bi-share-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card profile-card text-center">
+                            <!-- Contenu identique au Card 1 -->
+                            <div class="profile-header flex-column">
+                                <img src="assets/ugdpill.png" alt="Profile Image" class="profile-avatar">
+                                <div>
+                                    <div class="rating" style="color: orange;">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <span class="rating-count">(5)</span>
+                                    </div>
+                                    <h3 class="profile-name" style="margin: 0;">UGD Madagascar</h3>
+                                </div>
+                            </div>
+                            <div class="profile-footer">
+                                <div class="location">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <span>74, rue du 26 juin 1960<br>Analakely, Antananarivo</span>
+                                </div>
+                                <div class="actions">
+                                    <div class="action-btn share">
+                                        <i class="bi bi-share-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card profile-card text-center">
+                            <!-- Contenu identique au Card 1 -->
+                            <div class="profile-header flex-column">
+                                <img src="assets/fdcpill.png" alt="Profile Image" class="profile-avatar">
+                                <div>
+                                    <div class="rating" style="color: orange;">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <span class="rating-count">(5)</span>
+                                    </div>
+                                    <h3 class="profile-name" style="margin: 0;">FDC Madagascar</h3>
+                                </div>
+                            </div>
+                            <div class="profile-footer">
+                                <div class="location">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <span>74, rue du 26 juin 1960<br>Analakely, Antananarivo</span>
+                                </div>
+                                <div class="actions">
+                                    <div class="action-btn share">
+                                        <i class="bi bi-share-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card profile-card text-center">
+                            <!-- Contenu identique au Card 1 -->
+                            <div class="profile-header flex-column">
+                                <img src="assets/baobabpill.png" alt="Profile Image" class="profile-avatar">
+                                <div>
+                                    <div class="rating" style="color: orange;">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <span class="rating-count">(5)</span>
+                                    </div>
+                                    <h3 class="profile-name" style="margin: 0;">Baobab Banque</h3>
+                                </div>
+                            </div>
+                            <div class="profile-footer">
+                                <div class="location">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <span>74, rue du 26 juin 1960<br>Analakely, Antananarivo</span>
+                                </div>
+                                <div class="actions">
+                                    <div class="action-btn share">
+                                        <i class="bi bi-share-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Fin Section Offres -->
+
+
+        <!-- Section Get in touch -->
+
+        <div class="container-fluid text-center py-5">
+            <div class="container rounded-5 py-5" style="background-color: #019442; background-image: url(img/background.png); background-size: cover;">
+                <div class="row justify-content-center py-3">
+                    <div class="col-md-8">
+                        <h2 class="display-5 text-white fw-bold mb-3">Les nouvelles offres arrivent régulièrement</h2>
+                        <p class="lead text-white-50 mb-4">Abonnez-vous dès maintenant pour ne rien manquer des nouvelles opportunités professionnelles qui s'offrent à vous</p>
+                        
+                        <div class="input-group rounded-5 mb-3 mx-auto" style="max-width: 500px;">
+                            <span class="input-group-text bg-white border-0 rounded-start-3">
+                                <i class="bi bi-envelope-fill ms-3 fs-4" style="color: #019442;"></i>
+                            </span>
+                            <input type="email" class="form-control border-0 py-3" placeholder="Entrer votre adresse mail ici" aria-label="Email">
+                            <button class="btn btn-danger px-4 py-3 rounded-end-3" type="button">S'abonner</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fin Section Get in touch -->
+
+        <!-- Footer -->
+
+        <footer class="container-fluid py-3" style="background-color: #019442;">
+            <div class="container text-center text-white">
+                <div class="d-flex flex-wrap justify-content-center gap-3 small">
+                    <span>© 2024, tous droits réservés</span>
+                    <span class="d-none d-md-inline">|</span>
+                    <a href="#" class="text-white text-decoration-none">Mentions légales</a>
+                    <span class="d-none d-md-inline">|</span>
+                    <a href="#" class="text-white text-decoration-none">Contact</a>
+                    <span class="d-none d-md-inline">|</span>
+                    <span>Web design by KRAKEN Prod.</span>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Fin Footer -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
