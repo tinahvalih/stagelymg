@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STAGELY - Re-Bienvenue</title>
+    <title>Stagely MG - Annette Rakoto</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/svg+xml" href="assets/navicon.svg">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .login-container {
+            min-height: 100vh;
+        }
+        
+        .login-form {
+            padding: 2rem;
+        }
+        
+        .login-image {
+            padding: 0;
+            position: relative;
+        }
+        
+        .login-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        
+        .logo {
+            color: #00A651;
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            color: #6c757d;
+            margin-bottom: 2rem;
+        }
+        
+        label {
+            color: #6c757d;
+            margin-bottom: 0.5rem;
+        }
+        
+        .form-control {
+            padding: 0.8rem 1rem;
+            border-radius: 8px;
+            background-color: #f1f3f5;
+            border: none;
+            margin-bottom: 1.5rem;
+        }
+        
+        .input-icon {
+            position: relative;
+        }
+        
+        .input-icon i {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 1rem;
+            color: #6c757d;
+        }
+        
+        .input-with-icon {
+            padding-left: 3rem;
+        }
+        
+        .btn-connect {
+            background-color: #00A651;
+            color: white;
+            padding: 0.8rem;
+            border-radius: 8px;
+            width: 100%;
+            font-weight: 500;
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+            border: none;
+        }
+        
+        .btn-connect:hover {
+            background-color: #008d45;
+        }
+        
+        .forgot-password {
+            color: #0d6efd;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        
+        .signup-text {
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .signup-link {
+            color: #0d6efd;
+            text-decoration: none;
+        }
+        
+        .social-login {
+            margin-top: 1.5rem;
+        }
+        
+        .social-divider {
+            display: flex;
+            align-items: center;
+            color: #6c757d;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .social-divider::before,
+        .social-divider::after {
+            content: "";
+            flex: 1;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .social-divider::before {
+            margin-right: 0.5rem;
+        }
+        
+        .social-divider::after {
+            margin-left: 0.5rem;
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: flex-start;
+            gap: 1rem;
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        
+        .google-icon {
+            color: #DB4437;
+        }
+        
+        .facebook-icon {
+            color: #4267B2;
+        }
+        
+        .microsoft-icon {
+            color: #00A4EF;
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #fff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #495057;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <div class="row g-0 login-container">
+            <!-- Formulaire de connexion -->
+            <div class="px-5 col-md-6 login-form d-flex flex-column justify-content-center">
+                <div class="logo">
+                    <img src="assets/stagelylogo.png" alt="Logo de Stagely">
+                </div>
+                
+                <h1>Re-Bienvenue</h1>
+                <p class="subtitle">Se Connecter</p>
+                
+                <form>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Adresse Email</label>
+                        <div class="input-icon">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" class="form-control input-with-icon" id="email" value="jeandoe64@gmail.com">
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Mot de passe</label>
+                        <div class="input-icon">
+                            <i class="fas fa-key"></i>
+                            <input type="password" class="form-control input-with-icon" id="password" value="********">
+                        </div>
+                        <div class="text-end">
+                            <a href="#" class="forgot-password">Mot de passe oublié ?</a>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-connect">Se connecter</button>
+                    
+                    <p class="signup-text">Je n'ai pas encore de compte ? <a href="#" class="signup-link">S'inscrire</a></p>
+                    
+                    <div class="social-login d-flex flex-column align-items-center">
+                        <div class="social-divider">ou Continuer avec</div>
+                        <hr>
+                        <div class="social-icons" style="color: #008d45;">
+                            <div class="social-icon">
+                                <i class="bi bi-google"></i>
+                            </div>
+                            <div class="social-icon">
+                                <i class="bi bi-facebook"></i>
+                            </div>
+                            <div class="social-icon">
+                                <i class="bi bi-linkedin"></i>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Image -->
+            <div class="col-md-6 login-image d-none d-md-block">
+                <a class="close-btn" href="index.html">
+                    <i class="bi bi-x fs-2 text-success"></i>
+                </a>
+                <img src="assets/loginimg.png" alt="Étudiants">
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
